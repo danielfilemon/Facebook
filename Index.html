@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ebee;
+        }
+        .header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .search-bar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            margin-right: 20px;
+        }
+        .main-content {
+            width: 500px;
+        }
+        .post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post .post-header {
+            display: flex;
+            align-items: center;
+        }
+        .post .post-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .post .post-header .name {
+            font-weight: bold;
+        }
+        .post .post-content {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Mini Facebook</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="user-info">
+            <img src="https://via.placeholder.com/40" alt="User">
+            <div>John Doe</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sidebar content (e.g., links to profile, friends, messages) -->
+        </div>
+        <div class="main-content">
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/50" alt="User">
+                    <div class="name">Jane Smith</div>
+                </div>
+                <div class="post-content">
+                    This is a sample post content.
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/50" alt="User">
+                    <div class="name">John Doe</div>
+                </div>
+                <div class="post-content">
+                    Another example of a post.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
